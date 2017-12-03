@@ -1,0 +1,22 @@
+Ontologie -> data model
+RDF (Resource Description Framework) -> un triplet prin care este descrisa relatia dintre un subiect
+si un obiect/subiect prin intermediul unui predicat ( subiect -> predicat -> obiect )
+OWL (Ontology Web Language) -> colectie de RDF-uri
+
+Generare ML: se utilizeaza algoritmi de invatare automata pentru a clasifica RDF-urile pentru
+fisierele OWL.
+
+Exemplu:
+<!-- OWL Class Definition - Body Part -->
+<owl:Class rdf:about="...">
+	<rdfs:label>The body part</rdfs:label>
+</owl:Class>
+
+<!-- OWL Subclass Definition - Head -->
+<owl:Class rdf:about="...">
+	<!-- Head is a subclassification of body part -->
+	<rdfs:subClassOf rdf:resource="-body part about-"/>
+	<rdfs:label>The top body part</rdfs:label>
+</owl:Class>
+
+	
